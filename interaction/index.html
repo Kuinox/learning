@@ -21,19 +21,22 @@
     </style>
 
     <!-- LIBS -->
+    <script src="https://cdn.babylonjs.com/ammo.js" type="text/javascript"></script>
     <script src="../node_modules/cannon/build/cannon.js" type="text/javascript"></script>
-    <script src="../node_modules/babylonjs/babylon.max.js" type="text/javascript"></script>
-    <script src="interactions.js" type="text/javascript"></script>
+    <!-- <script src="../node_modules/babylonjs/babylon.max.js" type="text/javascript"></script> -->
+    <script src="../dist/main.js" type="text/javascript"></script>
 
 </head>
 <body>
+
     <canvas id="renderCanvas"></canvas>
 
     <script type="text/javascript">
         var canvas = document.getElementById("renderCanvas");
+        var debugCanvas = document.getElementById("debugCanvas");
 
-        var interactions = new BABYLON.Interactions(canvas);
-        interactions.run();
+        var interactions = new TP.Interactions(canvas, debugCanvas);
+        interactions.run();  
     </script>
 
 </body>

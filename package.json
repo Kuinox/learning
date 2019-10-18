@@ -10,17 +10,24 @@
     "url": "https://medium.com/@Luaacro"
   },
   "scripts": {
-    "webserver": "http-server -p 1337",
-    "build": "tsc -p .",
-    "watch": "tsc -p . --watch"
+    "webserver": "http-server -p 25566",
+    "webpack": "webpack",
+    "dev": "webpack --watch"
   },
   "readme": "https://github.com/julien-moreau/learning/blob/master/README.md",
   "license": "(Apache-2.0)",
   "devDependencies": {
-    "http-server": "0.11.1",
-    "typescript": "3.6.3",
     "babylonjs": "4.0.3",
-    "cannon": "0.6.2"
+    "cannon": "0.6.2",
+    "http-server": "^0.9.0",
+    "ts-loader": "^6.2.0",
+    "typescript": "3.6.3",
+    "webpack-cli": "^3.3.9"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@types/seedrandom": "^2.4.28",
+    "open-simplex-noise": "^1.6.0",
+    "seedrandom": "^3.0.5",
+    "webpack": "^4.41.0"
+  }
 }
